@@ -7,11 +7,11 @@ float volume(float raio)
 int main(void)
 {
     float r;
-    printf("Raio: ");
+    printf("raio: ");
     if (scanf("%f", & r) != 1 || r < 0)
     {
         return 1;
     }
-    printf("Volume: %.4f\n", volume(r));
+    printf("volume: %.4f\n", volume(r));
     return 0;
 }

@@ -4,7 +4,7 @@ float media(void)
 {
     float n, soma = 0;
     int quantidade = 0;
-    printf("Digite valores positivos (zero ou negativo encerra):\n");
+    printf("valores positivos (0 ou negativo pra parar):\n");
     while (scanf("%f", & n) == 1 && n > 0)
     {
         soma += n;
@@ -12,7 +12,7 @@ float media(void)
     }
     if (quantidade == 0)
     {
-        printf("Nenhum valor positivo informado.\n");
+        printf("nenhum valor positivo\n");
         return 0;
     }
     return soma / quantidade;
@@ -20,6 +20,6 @@ float media(void)
 int main(void)
 {
     float resultado = media();
-    printf("Media: %.4f\n", resultado);
+    printf("media: %.4f\n", resultado);
     return 0;
 }

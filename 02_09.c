@@ -12,7 +12,7 @@ void imprimir(const int * vetor)
 int main(void)
 {
     int v[TAM];
-    printf("Cinco inteiros: ");
+    printf("5 inteiros: ");
     for (int * p = v; p < v + TAM; p++)
     {
         if (scanf("%d", p) != 1)

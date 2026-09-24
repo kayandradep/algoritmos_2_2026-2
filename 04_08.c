@@ -33,16 +33,16 @@ int total_dias(struct Data d)
 int main(void)
 {
     struct Data a, b;
-    printf("Primeira data (dia mes ano): ");
+    printf("data 1 (dia mes ano): ");
     if (scanf("%d %d %d", & a.dia, & a.mes, & a.ano) != 3 || ! valida(a))
     {
-        printf("Data invalida.\n");
+        printf("data invalida.\n");
         return 1;
     }
-    printf("Segunda data (dia mes ano): ");
+    printf("data 2 (dia mes ano): ");
     if (scanf("%d %d %d", & b.dia, & b.mes, & b.ano) != 3 || ! valida(b))
     {
-        printf("Data invalida.\n");
+        printf("data invalida.\n");
         return 1;
     }
     int diferenca = total_dias(b) - total_dias(a);
@@ -50,6 +50,6 @@ int main(void)
     {
         diferenca = - diferenca;
     }
-    printf("Dias decorridos: %d\n", diferenca);
+    printf("dias entre as datas: %d\n", diferenca);
     return 0;
 }

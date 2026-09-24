@@ -17,11 +17,11 @@ float serie(int n)
 int main(void)
 {
     int n;
-    printf("N positivo: ");
+    printf("n positivo: ");
     if (scanf("%d", & n) != 1 || n <= 0)
     {
         return 1;
     }
-    printf("S = %.6f\n", serie(n));
+    printf("s = %.6f\n", serie(n));
     return 0;
 }

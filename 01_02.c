@@ -6,11 +6,11 @@ void baskara(float a, float b, float c)
     float delta = b * b - 4 * a * c;
     if (a == 0)
     {
-        printf("Nao e uma equacao do segundo grau.\n");
+        printf("nao e equacao de 2 grau\n");
     }
     else if (delta < 0)
     {
-        printf("Nao existem raizes reais.\n");
+        printf("sem raizes reais\n");
     }
     else
     {

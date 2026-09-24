@@ -9,21 +9,21 @@ struct Pessoa
 int main(void)
 {
     struct Pessoa p;
-    printf("Nome: ");
+    printf("nome: ");
     if (scanf(" %99[^\n]", p.nome) != 1)
     {
         return 1;
     }
-    printf("Idade: ");
+    printf("idade: ");
     if (scanf("%d", & p.idade) != 1 || p.idade < 0)
     {
         return 1;
     }
-    printf("Endereco: ");
+    printf("end: ");
     if (scanf(" %199[^\n]", p.endereco) != 1)
     {
         return 1;
     }
-    printf("Nome: %s\nIdade: %d\nEndereco: %s\n", p.nome, p.idade, p.endereco);
+    printf("nome: %s\nidade: %d\nend: %s\n", p.nome, p.idade, p.endereco);
     return 0;
 }

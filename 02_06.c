@@ -3,7 +3,7 @@
 int main(void)
 {
     int v[5];
-    printf("Cinco inteiros: ");
+    printf("cinco inteiros: ");
     for (int * p = v; p < v + 5; p++)
     {
         if (scanf("%d", p) != 1)

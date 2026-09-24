@@ -8,17 +8,17 @@ struct atleta
 };
 int ler_atleta(struct atleta * a)
 {
-    printf("Nome: ");
+    printf("nome: ");
     if (scanf(" %99[^\n]", a->nome) != 1)
     {
         return 0;
     }
-    printf("Esporte: ");
+    printf("esporte: ");
     if (scanf(" %99[^\n]", a->esporte) != 1)
     {
         return 0;
     }
-    printf("Idade e altura em metros: ");
+    printf("idade e altura (m): ");
     return scanf("%d %f", & a->idade, & a->altura) == 2 && a->idade >= 0 && a->altura > 0;
 }
 int main(void)
@@ -27,7 +27,7 @@ int main(void)
     int alto = 0, velho = 0;
     for (int i = 0; i < 5; i++)
     {
-        printf("Atleta %d\n", i + 1);
+        printf("atleta %d\n", i + 1);
         if (! ler_atleta(& atletas[i]))
         {
             return 1;
@@ -41,6 +41,6 @@ int main(void)
             velho = i;
         }
     }
-    printf("Mais alto: %s\nMais velho: %s\n", atletas[alto].nome, atletas[velho].nome);
+    printf("mais alto: %s\nmais velho: %s\n", atletas[alto].nome, atletas[velho].nome);
     return 0;
 }

@@ -10,7 +10,7 @@ void tabuada(int n)
 int main(void)
 {
     int n;
-    printf("N (1 a 46340): ");
+    printf("n (1 a 46340): ");
     if (scanf("%d", & n) != 1 || n <= 0 || n > 46340)
     {
         return 1;

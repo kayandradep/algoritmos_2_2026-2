@@ -12,11 +12,11 @@ int somatorio(int n)
 int main(void)
 {
     int n;
-    printf("N (1 a 65535): ");
+    printf("n (1 a 65535): ");
     if (scanf("%d", & n) != 1 || n <= 0 || n > 65535)
     {
         return 1;
     }
-    printf("Soma: %d\n", somatorio(n));
+    printf("soma: %d\n", somatorio(n));
     return 0;
 }

@@ -35,12 +35,12 @@ int main(void)
     int nova = 0, velha = 0;
     for (int i = 0; i < 6; i++)
     {
-        printf("Pessoa %d - nome: ", i + 1);
+        printf("pessoa %d - nome: ", i + 1);
         if (scanf(" %99[^\n]", pessoas[i].nome) != 1)
         {
             return 1;
         }
-        printf("Nascimento (dia mes ano): ");
+        printf("data de nasc (dia mes ano): ");
         if (scanf("%d %d %d", & pessoas[i].nascimento.dia, & pessoas[i].nascimento.mes, & pessoas[i].nascimento.ano) != 3 || ! valida(pessoas[i].nascimento))
         {
             return 1;
@@ -54,6 +54,6 @@ int main(void)
             velha = i;
         }
     }
-    printf("Mais nova: %s\nMais velha: %s\n", pessoas[nova].nome, pessoas[velha].nome);
+    printf("mais nova: %s\nmais velha: %s\n", pessoas[nova].nome, pessoas[velha].nome);
     return 0;
 }

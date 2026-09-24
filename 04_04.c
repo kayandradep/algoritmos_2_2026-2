@@ -14,7 +14,7 @@ int main(void)
     int maior = 0;
     for (int i = 0; i < 5; i++)
     {
-        printf("Horario %d (hora minuto segundo): ", i + 1);
+        printf("horario %d (h min s): ", i + 1);
         if (scanf("%d %d %d", & horas[i].hora, & horas[i].minuto, & horas[i].segundo) != 3)
         {
             return 1;
@@ -28,6 +28,6 @@ int main(void)
             maior = i;
         }
     }
-    printf("Maior hora: %02d:%02d:%02d\n", horas[maior].hora, horas[maior].minuto, horas[maior].segundo);
+    printf("maior hora: %02d:%02d:%02d\n", horas[maior].hora, horas[maior].minuto, horas[maior].segundo);
     return 0;
 }

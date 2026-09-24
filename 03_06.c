@@ -24,12 +24,12 @@ int * busca_subvetor(int * vetor, int tam_v, int * sub, int tam_s)
 int main(void)
 {
     int v[100], sub[100], n, m;
-    printf("Tamanho do vetor (1 a 100): ");
+    printf("tamanho do vetor (1 a 100): ");
     if (scanf("%d", & n) != 1 || n < 1 || n > 100)
     {
         return 1;
     }
-    printf("Elementos: ");
+    printf("elementos: ");
     for (int * p = v; p < v + n; p++)
     {
         if (scanf("%d", p) != 1)
@@ -37,12 +37,12 @@ int main(void)
             return 1;
         }
     }
-    printf("Tamanho do subvetor (1 a 100): ");
+    printf("tam do subvetor (1 a 100): ");
     if (scanf("%d", & m) != 1 || m < 1 || m > 100)
     {
         return 1;
     }
-    printf("Elementos do subvetor: ");
+    printf("elementos do subvetor: ");
     for (int * p = sub; p < sub + m; p++)
     {
         if (scanf("%d", p) != 1)
@@ -53,11 +53,11 @@ int main(void)
     int * achou = busca_subvetor(v, n, sub, m);
     if (achou)
     {
-        printf("Inicio no indice %d\n", (int) (achou - v));
+        printf("inicio no indice %d\n", (int) (achou - v));
     }
     else
     {
-        printf("Nao encontrado.\n");
+        printf("nao encontrou\n");
     }
     return 0;
 }

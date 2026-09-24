@@ -19,7 +19,7 @@ int perfeito(int n)
 int main(void)
 {
     int n;
-    printf("Numero: ");
+    printf("num: ");
     if (scanf("%d", & n) != 1)
     {
         return 1;

@@ -11,7 +11,7 @@ void preencher(int * vetor, int valor)
 int main(void)
 {
     int v[TAM], valor;
-    printf("Valor para preencher: ");
+    printf("valor pra preencher: ");
     if (scanf("%d", & valor) != 1)
     {
         return 1;

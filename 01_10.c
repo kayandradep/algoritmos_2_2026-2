@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-float calculadora(float a,float b,char op){
+float calculadora(float a,float b,char op)
+{
     if(op=='+')
         return a+b;
     else if(op=='-')

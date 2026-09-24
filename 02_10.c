@@ -6,13 +6,13 @@ int main(void)
     b = & a;
     c = & b;
     d = & c;
-    printf("Inteiro: ");
+    printf("inteiro: ");
     if (scanf("%d", b) != 1)
     {
         return 1;
     }
-    printf("Dobro: %d\n", 2 * * b);
-    printf("Triplo: %d\n", 3 * * * c);
-    printf("Quadruplo: %d\n", 4 * * * * d);
+    printf("dobro: %d\n", 2 * * b);
+    printf("triplo: %d\n", 3 * * * c);
+    printf("quadruplo: %d\n", 4 * * * * d);
     return 0;
 }

@@ -28,12 +28,12 @@ int main(void)
 {
     int v[100], n, min, max;
     float media;
-    printf("Tamanho (1 a 100): ");
+    printf("tamanho (1 a 100): ");
     if (scanf("%d", & n) != 1 || n < 1 || n > 100)
     {
         return 1;
     }
-    printf("Elementos: ");
+    printf("elementos: ");
     for (int * p = v; p < v + n; p++)
     {
         if (scanf("%d", p) != 1)
@@ -42,6 +42,6 @@ int main(void)
         }
     }
     extrair_estatisticas(v, n, & min, & max, & media);
-    printf("Minimo: %d\nMaximo: %d\nMedia: %.4f\n", min, max, media);
+    printf("min: %d\nmax: %d\nmedia: %.4f\n", min, max, media);
     return 0;
 }

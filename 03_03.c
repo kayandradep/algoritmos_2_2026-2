@@ -27,6 +27,6 @@ int main(void)
             ptr = (int *) ((unsigned char *) & matriz + (i + 1) * sizeof(int));
         }
     }
-    printf("Soma da diagonal: %d\n", soma);
+    printf("soma da diagonal: %d\n", soma);
     return 0;
 }

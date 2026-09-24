@@ -19,12 +19,12 @@ void inverte_vetor(int * vetor, int tamanho)
 int main(void)
 {
     int v[100], n;
-    printf("Tamanho (1 a 100): ");
+    printf("tam do vetor (1 a 100): ");
     if (scanf("%d", & n) != 1 || n < 1 || n > 100)
     {
         return 1;
     }
-    printf("Elementos: ");
+    printf("elementos: ");
     for (int * p = v; p < v + n; p++)
     {
         if (scanf("%d", p) != 1)

@@ -15,17 +15,17 @@ int main(void)
     int melhor = 0;
     for (int i = 0; i < 5; i++)
     {
-        printf("Aluno %d - matricula: ", i + 1);
+        printf("aluno %d - mat: ", i + 1);
         if (scanf(" %29s", alunos[i].matricula) != 1)
         {
             return 1;
         }
-        printf("Nome: ");
+        printf("nome: ");
         if (scanf(" %99[^\n]", alunos[i].nome) != 1)
         {
             return 1;
         }
-        printf("Tres notas: ");
+        printf("3 notas: ");
         for (int j = 0; j < 3; j++)
         {
             if (scanf("%f", & alunos[i].notas[j]) != 1)
@@ -38,6 +38,6 @@ int main(void)
             melhor = i;
         }
     }
-    printf("Aluno: %s\nNotas: %.2f %.2f %.2f\nMedia: %.2f\n", alunos[melhor].nome, alunos[melhor].notas[0], alunos[melhor].notas[1], alunos[melhor].notas[2], media(alunos[melhor]));
+    printf("aluno: %s\nnotas: %.2f %.2f %.2f\nmedia: %.2f\n", alunos[melhor].nome, alunos[melhor].notas[0], alunos[melhor].notas[1], alunos[melhor].notas[2], media(alunos[melhor]));
     return 0;
 }
